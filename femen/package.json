@@ -1,0 +1,62 @@
+{
+  "name": "femen",
+  "version": "1.20.0",
+  "description": "Test React Components in browser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "femen": "./entry.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/femen/femen.git"
+  },
+  "keywords": [
+    "react",
+    "test",
+    "puppeteer",
+    "storybook",
+    "framework"
+  ],
+  "author": "Ilya Groshev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/femen/femen/issues"
+  },
+  "homepage": "https://github.com/femen/femen#readme",
+  "dependencies": {
+    "@storybook/react": "^3.4.6",
+    "babel-polyfill": "^6.26.0",
+    "boxen": "^1.3.0",
+    "command-exists": "^1.2.7",
+    "glob": "^7.1.2",
+    "jest": "^23.4.1",
+    "jest-css-modules": "^1.1.0",
+    "jest-environment-puppeteer": "^3.2.1",
+    "jest-image-snapshot": "^2.4.3",
+    "jest-puppeteer": "^3.2.1",
+    "loader-utils": "^1.1.0",
+    "puppeteer": "1.6.0",
+    "puppeteer-request-mocker": "^0.10.0",
+    "rimraf": "^2.6.2",
+    "serve": "^6.5.8",
+    "serve-static": "^1.13.2",
+    "shelljs": "^0.8.2",
+    "val-loader": "^1.1.0",
+    "webpack-merge": "^4.1.3",
+    "yamlify-object": "^0.5.1",
+    "yamlify-object-colors": "^1.0.3",
+    "yargs": "^11.0.0"
+  },
+  "peerDependencies": {
+    "react": "^16.x",
+    "react-dom": "^16.x"
+  },
+  "devDependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "webpack-bundle-analyzer": "^2.13.1"
+  }
+}

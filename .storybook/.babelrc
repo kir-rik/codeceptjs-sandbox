@@ -1,0 +1,20 @@
+{
+  "presets": [
+    ["@babel/preset-env", {
+      "loose": true,
+      "modules": "commonjs",
+      "shippedProposals": true
+    }],
+    "@babel/preset-react",
+    "@babel/preset-flow"
+  ],
+  "plugins": [
+    ["module-resolver", {
+      "root": ["./packages"],
+      "extensions": [".js", ".jsx"]
+    }],
+    ["@babel/plugin-proposal-class-properties", { "loose": true }],
+    "@babel/plugin-proposal-export-default-from",
+    "@babel/plugin-proposal-object-rest-spread"
+  ]
+}

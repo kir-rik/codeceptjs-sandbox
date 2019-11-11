@@ -1,0 +1,35 @@
+{
+  "name": "codeceptjs-sandbox",
+  "version": "1.0.0",
+  "description": "Sandbox for writing codeceptjs e2e tests",
+  "main": "index.js",
+  "scripts": {
+    "build:storybook": "build-storybook -o public/storybook",
+    "storybook": "start-storybook -p 3002",
+    "build:codeceptjs": "femen build --config ./femen.config.js",
+    "test:codeceptjs": "yarn build:codeceptjs && yarn test:codeceptjs:run",
+    "test:codeceptjs:run": "cross-env NODE_ENV=test SKIP_SCREENSHOTS=true ./node_modules/.bin/codeceptjs run --config ./tests/codeceptjs/configs/chrome.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kir-rik/codeceptjs-sandbox.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kir-rik/codeceptjs-sandbox/issues"
+  },
+  "homepage": "https://github.com/kir-rik/codeceptjs-sandbox#readme",
+  "dependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@storybook/react": "^5.1.11",
+    "babel-loader": "^8.0.6",
+    "codeceptjs": "2.2.1",
+    "proxy-polyfill": "^0.3.0",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
+  }
+}

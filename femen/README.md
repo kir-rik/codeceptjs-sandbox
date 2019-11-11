@@ -1,0 +1,1 @@
+Удалено из npm, доступно на https://libraries.io/npm/femen
